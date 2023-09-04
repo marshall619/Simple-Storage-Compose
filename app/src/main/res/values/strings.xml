@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Jelve Store</string>
+    <string name="wrong_username_or_pass">نام کاربری یا پسورد اشتباه است!! لطفا دوباره وارد کنید.</string>
+    <string name="review">نقد و بررسی</string>
+    <string name="product_introduce">معرفی اجمالی محصول</string>
+</resources>
