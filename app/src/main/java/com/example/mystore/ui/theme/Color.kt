@@ -86,18 +86,6 @@ val Colors.settingArrow: Color
     @Composable
     get() = if (isLight) Color(0xff9e9fb1) else Color(0xFFd8d8d8)
 
-val Colors.DigikalaLightRedText: Color
-    @Composable
-    get() = if (isLight) Color(0xffef4056) else Color(0xFFFFFFFF)
-
-val Colors.Gold : Color
-    @Composable
-    get() = Color(0xFFf9bc01)
-
-val Colors.grayAlpha: Color
-    @Composable
-    get() = Color(0xFFc1c2c6)
-
 
 val Colors.semiDarkText: Color
     @Composable
@@ -107,10 +95,3 @@ val Colors.CursorColor : Color
     @Composable
     get() = Color(0xFF018577)
 
-val Colors.Oranges: Color
-    @Composable
-    get() = Color(0xFFFF5722)
-
-val Colors.Green : Color
-    @Composable
-    get() = Color(0xFF00A049)

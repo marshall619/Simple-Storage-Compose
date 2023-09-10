@@ -29,6 +29,7 @@ fun AddButton(
             .fillMaxWidth()
             .padding(horizontal = 30.dp)
             .clip(RoundedCornerShape(30.dp))
+            .padding(bottom = 4.dp)
             .background(
                 Brush.horizontalGradient(
                     colors = listOf(
