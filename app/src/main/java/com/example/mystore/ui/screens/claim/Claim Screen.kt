@@ -137,14 +137,22 @@ fun ClaimScreen(
                 }
                 ClaimButton(Color(0xFF4CAF50), "افزودن") {
                     if (isIdFounded) {
-                        viewModel.updateProductById(
-                            (itemFounded.count + count.toInt()),
-                            itemFounded.id
-                        )
-                        navController.navigate(Screen.Home.route) {
-                            popUpTo(Screen.Claim.route) {
-                                inclusive = true
+                        if (count.isNotEmpty()) {
+                            viewModel.updateProductById(
+                                (itemFounded.count + count.toInt()),
+                                itemFounded.id
+                            )
+                            navController.navigate(Screen.Home.route) {
+                                popUpTo(Screen.Claim.route) {
+                                    inclusive = true
+                                }
                             }
+                        } else {
+                            Toast.makeText(
+                                context,
+                                "لطفا مقدار افزودنی را وارد کنید.",
+                                Toast.LENGTH_SHORT
+                            ).show()
                         }
                     } else {
                         Toast.makeText(
