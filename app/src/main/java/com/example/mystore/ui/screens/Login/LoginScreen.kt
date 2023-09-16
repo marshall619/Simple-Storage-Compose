@@ -56,7 +56,7 @@ import com.example.mystore.ui.theme.loginBoxTopColor
 import com.example.mystore.util.Constants.Password
 import com.example.mystore.util.Constants.UserName
 import com.example.mystore.viewModel.DataStoreViewModel
-//login page
+
 @Composable
 fun LoginScreen(navController: NavController, viewModel: DataStoreViewModel = hiltViewModel()) {
 
